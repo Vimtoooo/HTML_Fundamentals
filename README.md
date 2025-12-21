@@ -28,3 +28,32 @@ Inside the `<html>` tag, we add the `<body>` tag, which holds all of the visible
 
 From the above example, you are given the base code of an HTML page, and inside the `<body>` tag, there is a text, which will be displayed on the webpage as content.
 
+### Elements and Tags:
+
+In HTML, the **tags** are represented as **keywords enclosed in angle brackets**, like the simple `<html>`. They tell the browser how to display the content. The **elements** are the **components of an HTML document**, consisting of a start tag, content and an end tag. Here's a simple breakdown:
+
+#### Tags:
+
+```html
+<html> <!-- Singular tag for representation -->
+```
+
+This singular `<html>` tag is just a keyword within double angle brackets that define how content is displayed.
+
+#### Elements:
+
+```html
+<html>
+    <body>
+        <!-- These would be considered as elements, with opening and closing tags! -->
+    </body>
+</html>
+```
+
+In the other hand, the elements are components made up of a start tag, content inside that block for that tag, and an end tag, which can be identified with the `</body>` syntax ("/").
+
+```html
+<p>This is a paragraph.</p>
+```
+
+For that example, the `<p>` is the start tag, "This is a paragraph." is the content, and the `</p>` is the end tag. Together, they form a paragraph element!

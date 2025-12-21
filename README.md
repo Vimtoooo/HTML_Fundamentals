@@ -85,3 +85,34 @@ Incorrect nesting can lead to rendering issues, so make sure to always close tag
 <p>This is <strong>bold text.</p></strong>
 ```
 
+### Comments:
+
+Comments are a feature used commonly for documenting parts in your code, but they are mainly known as **notes that don't appear in your program or web page**. They are useful for:
+
+- Explaining complex code;
+- Leaving notes for other or yourself;
+- Temporarily disabling code.
+
+#### Syntax:
+
+In HTML, comments are written between `<!--` and `-->`.
+
+```html
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+```
+
+#### Disabling Content:
+
+You can also use comments to not exhibit content or disable functioning code in your html document.
+
+```html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            <!--Hello <strong>boys</strong>!-->
+        </p>
+    </body>
+</html>
+```

@@ -57,3 +57,31 @@ In the other hand, the elements are components made up of a start tag, content i
 ```
 
 For that example, the `<p>` is the start tag, "This is a paragraph." is the content, and the `</p>` is the end tag. Together, they form a paragraph element!
+
+### Nesting and Closing Tags:
+
+In HTML, nesting means placing an element inside another. For example, you can put the `<strong>` tag inside the `<p>` tag to make the text bald within a paragraph.
+Here is how it looks:
+
+```html
+<p>This is <strong>bold</strong> text.</p>
+```
+
+**Closing tags are crucial**, it is mandatory that every start tag must implement an end tag, rementioning that the end tag has a **/** bar at the beginning of a keyword (left-side). This can be seen in the above code, the `<p>` is the start, we have the content inside between the start and end tags, and the `</p>` represents the end tag.
+
+#### Issues with Incorrect Nesting:
+
+Incorrect nesting can lead to rendering issues, so make sure to always close tags in the correct order. The inner tag should be closed before the outer tag.
+
+##### Correct Nesting:
+
+```html
+<p>This is <strong>bold</strong> text.</p>
+```
+
+##### Incorrect Nesting:
+
+```html
+<p>This is <strong>bold text.</p></strong>
+```
+

@@ -173,3 +173,31 @@ With all these headings, you can construct something that looks similar to this:
 #### Summary:
 
 Use headings to organize your content clearly, making it easy for both people and search engines to **understand your page's structure**. Always start with `<h1>` (once per page!), then use `<h2>`, `<h3>` and etc... as needed for subsections.
+
+### Paragraphs:
+
+In HTML, paragraphs are used to **show blocks of text**, where you would define them inside the `<p>` and `</p>` tags. Note that when you put text between the `<p>` and `</p>` tags, the browser will display it as a separate paragraph with some space above and below it. Here is how you can add a paragraph in HTML:
+
+```html
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+```
+
+> [!NOTE]
+> If you are creating an article, the **title** would be a heading `<h1>`, and the **actual text** would be the paragraph `<p>`.
+
+#### Example of a Paragraph:
+
+```html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Welcome to our pizza restaurant!</p>
+        <p>Explore our menu today.</p>
+    </body>
+</html>
+```
+
+#### Combining Headings with Paragraphs:
+
+```html

@@ -201,3 +201,15 @@ In HTML, paragraphs are used to **show blocks of text**, where you would define 
 #### Combining Headings with Paragraphs:
 
 ```html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            <h1>Welcome to My Website</h1>
+            <h2>About Me</h2>
+            <p>My name is Vimto, and I code for living</p>
+        </p>
+    </body>
+</html>
+```
+

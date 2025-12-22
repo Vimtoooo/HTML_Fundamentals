@@ -124,6 +124,8 @@ You can also use comments to not exhibit content or disable functioning code in 
 You are probably not going to use only plain text into your website, right? 
 If you would like to add a title or a section name, the best way is to utilize **headings**. Note that there are **six levels of headings**, from `<h1>` (the most important) to `<h6>` (the least important). Here is an example of usage:
 
+#### Example of Usage:
+
 ```html
 <h1>This is a main heading</h1>
 <h2>This is a subheading</h2>
@@ -213,3 +215,17 @@ In HTML, paragraphs are used to **show blocks of text**, where you would define 
 </html>
 ```
 
+### Line Breaks:
+
+In HTML, the `<br>` tag is used to create a **line break**, which can be useful when you want to start text on a new line without having to start another paragraph. Unlike the `<p>` tag, which adds a blank line before and after the text, the `<br>` tag simply moves the text to the next line.
+Here's how you can use the `<br>` tag in HTML:
+
+#### Example of Usage:
+
+```html
+<p>This is a line.<br>This is another line.</p>
+```
+
+When using the `<br>` tag, you won't necessarily use the end tag for the `<br>` line breaker tag since we just want to move one part of the text to the next line...
+
+On the example above, "This is a line." will be displayed above "This is another line.", successfully separating the text in half and displaying the text in separate lines. The `<br>` tag is an **empty element**, which means that it **doesn't have an end tag**. So you would just simply write the `<br>` tag where you want the line break to occur.

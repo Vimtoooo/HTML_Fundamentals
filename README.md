@@ -116,3 +116,60 @@ You can also use comments to not exhibit content or disable functioning code in 
     </body>
 </html>
 ```
+
+## Text and Formatting:
+
+### Headings:
+
+You are probably not going to use only plain text into your website, right? 
+If you would like to add a title or a section name, the best way is to utilize **headings**. Note that there are **six levels of headings**, from `<h1>` (the most important) to `<h6>` (the least important). Here is an example of usage:
+
+```html
+<h1>This is a main heading</h1>
+<h2>This is a subheading</h2>
+<h3>This is a sub-subheading</h3>
+```
+
+#### Purpose of Headings:
+
+Headings help **organize your content** and make it easier for people or users to **search engines to understand your page**.
+
+* `<h1>`: Represents the main title of the webpage (the most important);
+* `<h2>`: Subheading;
+* `<h3>`: Sub-subheading;
+* `<h4>` and `<h5>`: Other sub-sub-headings;
+* `<h6>`: The least important heading.
+
+With all these headings, you can construct something that looks similar to this:
+
+```html
+<h1>Welcome to My Website</h1>
+<h2>About Me</h2>
+<h3>My Hobbies</h3>
+<h4>Reading</h4>
+<h5>Fiction</h5>
+<h6>Favorite Authors</h6>
+```
+
+#### How to use Headings Well:
+
+- Use only **one `<h1>` per page** for the main title;
+- Use headings to create a **logical structure**, you can think of them as an outline;
+- **Never skip heading levels**, for example: Don't jump from `<h1>` to `<h4>`;
+- Use headings for structure, not for styling, because **CSS** will take over that part and will prioritize for appearance;
+- Headings help with accessibility and SEO (Search Engine Optimization), they make your content easier to navigate for users and search engines.
+
+##### Example of Good Heading Structure:
+
+```html
+<h1>HTML Fundamentals</h1>
+<h2>Introduction</h2>
+<h2>HTML Basics</h2>
+  <h3>Elements and Tags</h3>
+  <h3>Nesting</h3>
+<h2>Formatting Text</h2>
+```
+
+#### Summary:
+
+Use headings to organize your content clearly, making it easy for both people and search engines to **understand your page's structure**. Always start with `<h1>` (once per page!), then use `<h2>`, `<h3>` and etc... as needed for subsections.

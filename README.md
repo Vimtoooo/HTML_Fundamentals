@@ -282,7 +282,7 @@ In this example, we have a main heading, a paragraph with bold and italic text, 
 
 ### Unordered List:
 
-In HTML, an **unordered list** is a list of items that are **not ordered by numbers or letters**. Instead, each item is marked with a **bullet point**. To create an unordered list, you would use the `<ul>` tag (marks the structure). Each item in the list is defined using the `<li>` tag (they would represent the bullet points).
+In HTML, an **unordered list** is a list of items that are **not ordered by numbers or letters**. Instead, each item is marked with a **bullet point**. To create an unordered list, you would use the `<ul>` and the `</ul>` tags (marks the structure). Each item in the list is defined using the `<li>` and `</li>` tags (they would represent the bullet points).
 
 #### Example of Usage:
 
@@ -304,5 +304,31 @@ In this example, the `<ul>` tag defines the unordered list, and each `<li>` tag 
 
 #### Why use Unordered Lists?
 
-Unordered lists are useful when presenting items that do not consist of any order, such as a list of ingredients or features.
+Unordered lists are useful when presenting items that do not consist of **any order**, such as a list of ingredients or features.
+
+### Ordered Lists:
+
+Now an **ordered list** is a list of items that are ordered by numbers or letters. To create an ordered list, you would use the `<ol>` and `</ol>` tags, and each element in the list is defined using the `<li>` and `</li>` tags (similar to the unordered list).
+
+#### Example of Usage:
+
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+```
+
+In this example, the `<ol>` tag defines the ordered list, and each `<li>` tag represents a list item. When displayed in a browser, this code will create a numbered list:
+
+```
+1. First item
+2. Second item
+3. Third item
+```
+
+#### Why use Ordered Lists?
+
+Ordered lists are useful for presenting items where the **order matters**, such as steps in a procedure or a list of ranked items.
 

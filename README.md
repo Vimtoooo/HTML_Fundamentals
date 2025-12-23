@@ -9,11 +9,11 @@ HTML is also a **Static language**, where it does not inherently provide interac
 
 Every HTML document follows a simple structure:
 
-#### <!DOCTYPE html>:
+#### The `<!DOCTYPE html>`:
 
 At the very top (line 1), it starts with `<!DOCTYPE html>`, telling us **which version of HTML** that we are using. This will be then, followed by the `<html>` tag, containing **all of the HTML content**.
 
-#### <HTML>:
+#### `<HTML>`:
 
 Inside the `<html>` tag, we add the `<body>` tag, which holds all of the visible content of the web page. Here is a simple example:
 
@@ -229,3 +229,35 @@ Here's how you can use the `<br>` tag in HTML:
 When using the `<br>` tag, you won't necessarily use the end tag for the `<br>` line breaker tag since we just want to move one part of the text to the next line...
 
 On the example above, "This is a line." will be displayed above "This is another line.", successfully separating the text in half and displaying the text in separate lines. The `<br>` tag is an **empty element**, which means that it **doesn't have an end tag**. So you would just simply write the `<br>` tag where you want the line break to occur.
+
+### Bold and Italic Text:
+
+In HTML, you can style text easily!
+
+* Make it bold with the `<strong>` tag;
+* Make it italic with `<em>`.
+
+These tags help emphasize important words and making them stand out!
+
+#### Example of Usage:
+
+```html
+<p>This is normal text</p>
+<p>This is <strong>bold</strong> text</p>
+<p>This is <em>italic</em> text</p>
+```
+
+In the example above, the word "bold" will be displayed in bold, while the "italic" word will be displayed in italics.
+
+#### Other Bold and Italic Tags:
+
+There are another two different tags that can be used to make your text bold or in italics:
+
+- `<b>`: Bold;
+- `<i>`: Italic.
+
+Here is an example:
+
+```html
+<p>This is normal text. <b>This is bold text</b>. <i>This is italic text</i>.</p>
+```

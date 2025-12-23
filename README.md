@@ -261,3 +261,48 @@ Here is an example:
 ```html
 <p>This is normal text. <b>This is bold text</b>. <i>This is italic text</i>.</p>
 ```
+
+### Recap - Text Formatting:
+
+* **Headings**: Use `<h1>` up to `<h6>` tags to create headings with different levels (most to least important);
+* **Paragraphs**: Use `<p>` and `</p>` to construct paragraphs, where browsers automatically generate a space above and below each paragraph;
+* **Line Breakers**: Use `<br>` when needing to separate text into other sections;
+* **Bold and Italic**: Use `<strong>` and `</strong>` (or `<b>`) for making text bold, and `<em>` or `<i>` for italics!
+
+Here is an example that combines all of the mentioned tags:
+
+```html
+<h1>Main Heading</h1>
+<p>This is a <strong>bold</strong> paragraph. Here is a line break:<br>This is <em>italic</em> text.</p>
+```
+
+In this example, we have a main heading, a paragraph with bold and italic text, and a line break within the paragraph. This demonstrates how to use different formatting tags together to create well-structured and styled content.
+
+## Working with Lists:
+
+### Unordered List:
+
+In HTML, an **unordered list** is a list of items that are **not ordered by numbers or letters**. Instead, each item is marked with a **bullet point**. To create an unordered list, you would use the `<ul>` tag (marks the structure). Each item in the list is defined using the `<li>` tag (they would represent the bullet points).
+
+#### Example of Usage:
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+In this example, the `<ul>` tag defines the unordered list, and each `<li>` tag represents a list item. When displayed in a browser, this code will create a list with bullet points:
+
+```
+* Item 1
+* Item 2
+* Item 3
+```
+
+#### Why use Unordered Lists?
+
+Unordered lists are useful when presenting items that do not consist of any order, such as a list of ingredients or features.
+

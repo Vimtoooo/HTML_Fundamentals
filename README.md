@@ -284,6 +284,10 @@ In this example, we have a main heading, a paragraph with bold and italic text, 
 
 In HTML, an **unordered list** is a list of items that are **not ordered by numbers or letters**. Instead, each item is marked with a **bullet point**. To create an unordered list, you would use the `<ul>` and the `</ul>` tags (marks the structure). Each item in the list is defined using the `<li>` and `</li>` tags (they would represent the bullet points).
 
+> [!NOTE]
+> Remember, `<ul>` stands for **Unordered List** and the `<li>` stands for a **list item**!
+> If you don't remember what tags or elements to use, always be aware of the letters within the elements and tags.
+
 #### Example of Usage:
 
 ```html
@@ -310,6 +314,8 @@ Unordered lists are useful when presenting items that do not consist of **any or
 
 Now an **ordered list** is a list of items that are ordered by numbers or letters. To create an ordered list, you would use the `<ol>` and `</ol>` tags, and each element in the list is defined using the `<li>` and `</li>` tags (similar to the unordered list).
 
+The `<ol>` tag stands for **Ordered List**.
+
 #### Example of Usage:
 
 ```html
@@ -331,4 +337,41 @@ In this example, the `<ol>` tag defines the ordered list, and each `<li>` tag re
 #### Why use Ordered Lists?
 
 Ordered lists are useful for presenting items where the **order matters**, such as steps in a procedure or a list of ranked items.
+
+### Nested Lists:
+
+Did you know that you can place **one list inside another?** 
+This feature is so called **nested lists**, this can be useful for creating hierarchical structures, such as outliers or multi-level menus. 
+
+#### Creating a Nested List:
+
+Now, to create a nested list, you simply add the `<ul>` or the `<ol>` element inside the outer `<i>`, `<li>` or `</i>` element of another list. Here's an example of a nested unordered list:
+
+```html
+<ul> <!-- This tag will be the outer list -->
+  <li>Item 1</li>
+  <li>Item 2
+    <ul> <!-- This would be the inner list -->
+      <li>Subitem 2.1</li>
+      <li>Subitem 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+```
+
+> [!NOTE]
+> The second item `Item 2` contains a nested list of two subitems: `Subitem 2.1` and `Subitem 2.2`.
+
+In the browser, it will look similar to this:
+
+```html
+* Item 1
+* Item 2
+    - Subitem 2.1
+    - Subitem 2.2
+* Item 3
+```
+
+You can also nest ordered lists or mix them up!
 

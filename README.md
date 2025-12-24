@@ -433,3 +433,41 @@ Here is a general syntax for adding attributes into an HTML element:
 - `attribute1` and `attribute2`: Names of the attributes;
 - `value1` and `value2`: The values assigned to those attributes.
 
+### Links:
+
+In HTML, a **link** (or a hyperlink) is an element that connects **one webpage to another**. 
+
+You can create links to other webpages, files, locations within the same page or any other URL. Links are create using the `<a>` tag. The `<a>` tag stands for **anchor**.
+
+#### Example of Usage:
+
+Here is the basic syntax for making links in HTML:
+
+```html
+<a href="url">Link text</a>
+```
+
+- `<a>`: The opening anchor tag;
+- `href`: The destination URL of the link;
+- `Link text`: The visible text that users will see and click on;
+- `</a>`: The closing anchor tag.
+
+#### Link to Google's Homepage:
+
+```html
+<a href="https://www.google.com">Visit Google</a>
+```
+
+In this example, when a user clicks on the text "Visit Google", they will be taken to `https://www.google.com`.
+
+#### Multiple Links:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <a href="https://coddy.tech">Visit Coddy </a>
+    <a href="https://www.google.com">Visit Google</a>
+  </body>
+</html>
+```

@@ -414,3 +414,22 @@ Here is an example of all of the lists being used in a webpage: A Todo List
   </body>
 </html>
 ```
+
+## Adding Content:
+
+### HTML Attributes:
+
+In HTML, **attributes** provide additional information about elements. They are used to define properties of an element, such as its size, color or behavior. Attributes are always specified in the start tag and usually come in `name/value` pairs like `name=value`.
+
+#### General Syntax:
+
+Here is a general syntax for adding attributes into an HTML element:
+
+```html
+<tagname attribute1="value1" attribute2="value2">Content</tagname>
+```
+
+- `tagname`: Name of the HTML element, for example: (`<p>`, `<strong>`, `<h3>`);
+- `attribute1` and `attribute2`: Names of the attributes;
+- `value1` and `value2`: The values assigned to those attributes.
+

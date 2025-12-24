@@ -355,7 +355,7 @@ Now, to create a nested list, you simply add the `<ul>` or the `<ol>` element in
       <li>Subitem 2.1</li>
       <li>Subitem 2.2</li>
     </ul>
-  </li>
+  </li> <!-- When nesting, always have an end tag for legible and efficient nesting -->
   <li>Item 3</li>
 </ul>
 ```
@@ -375,3 +375,42 @@ In the browser, it will look similar to this:
 
 You can also nest ordered lists or mix them up!
 
+### Recap - Lists:
+
+* **Unordered Lists `<ul>`:** Use `<ul>` and `</ul>` for creating an unordered list (with bullet points), each item is defined using the **item list tags `<li>` and `</li>`**;
+* **Ordered Lists `<ol>`:** Use `<ol>` and `</ol>` for creating a numbered list, where each item is also defined with `<li>`;
+* **Nested Lists:** Place one list inside another by putting either the `<ul>` or `<ol>` inside the inner `<li>` tag of another list, then use any of the lists as mentioned!
+
+Here is an example of all of the lists being used in a webpage: A Todo List
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>My Todo List</h1>
+    <ol>
+      <li>Morning
+        <ul>
+          <li>Wake up at 5:00 AM</li>
+          <li>Brush my teeth</li>
+          <li>Read a book of choice</li>
+        </ul>
+      </li>
+      <li>Afternoon
+        <ul>
+          <li>Touch some grass</li>
+          <li>Do my homework</li>
+          <li>Go to the gym</li>
+        </ul>
+      </li>
+      <li>Evening
+        <ul>
+          <li>Stretch</li>
+          <li>Play games</li>
+          <li>Sleep</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
+```

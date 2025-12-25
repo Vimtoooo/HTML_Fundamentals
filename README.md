@@ -558,3 +558,38 @@ And if you combine these features, you should get something like this:
 ```
 
 This would set the image source, provide a brief description, and sizes of 600x400 pixels. Always include an `alt` for accessibility and dimensions to maintain design consistency.
+
+## Page Layout:
+
+### Divisions:
+
+Imagine that you would like to split you webpage into segmented blocks to organize your content. In HTML, you can use the `<div>` to group elements together. 
+The `<div>` tags are handy for creating layouts and separating sections. Here's the basic syntax:
+
+#### Basic Syntax:
+
+```html
+<div>
+    <!-- Content goes here -->
+</div>
+```
+
+> [!NOTE]
+> You can add other HTML elements inside a `<div>` tag, such as paragraphs, headings, images, and even nest other `<div>` elements!
+
+#### Example of Usage:
+
+Here, the `<div>` is being used to construct a simple layout with a header, main content area and a footer.
+
+```html
+<div>
+    <h1>Header</h1>
+</div>
+<div>
+    <p>Main content goes here.</p>
+</div>
+<div>
+    <p>Footer</p>
+</div>
+```
+

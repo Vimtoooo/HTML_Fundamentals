@@ -564,7 +564,7 @@ This would set the image source, provide a brief description, and sizes of 600x4
 ### Divisions:
 
 Imagine that you would like to split you webpage into segmented blocks to organize your content. In HTML, you can use the `<div>` to group elements together. 
-The `<div>` tags are handy for creating layouts and separating sections. Here's the basic syntax:
+The `<div>` (division) tags are handy for creating layouts and separating sections. Here's the basic syntax:
 
 #### Basic Syntax:
 
@@ -592,4 +592,27 @@ Here, the `<div>` is being used to construct a simple layout with a header, main
     <p>Footer</p>
 </div>
 ```
+
+### Inline Spans:
+
+Imagine that you have a sentence and you wish to highlight one word or a small part of it, what would you do to handle this case? Use a `<span>` tag? Well the answer is crystal clear!
+
+We can use the `<span>` tag to apply styles or make changes to only a specific part of a text without affecting the rest. 
+
+#### Basic Syntax:
+
+```html
+<span>This is some text.</span>
+```
+
+#### Highlighting a Portion of Text:
+
+```html
+<p>
+  This is a <span style="color:blue;">blue</span> word.
+</p>
+```
+
+The `style` attribute within the `<span>` tag is applying a blue paint in the "blue" word, and the rest of the sentence remains the same color!
+This is just an introduction to style attributes, we will learn them next lesson!
 

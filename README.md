@@ -439,7 +439,7 @@ In HTML, a **link** (or a hyperlink) is an element that connects **one webpage t
 
 You can create links to other webpages, files, locations within the same page or any other URL. Links are create using the `<a>` tag. The `<a>` tag stands for **anchor**.
 
-#### Example of Usage:
+#### Basic Syntax:
 
 Here is the basic syntax for making links in HTML:
 
@@ -462,6 +462,8 @@ In this example, when a user clicks on the text "Visit Google", they will be tak
 
 #### Multiple Links:
 
+##### Links Next to Each Other:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -471,3 +473,88 @@ In this example, when a user clicks on the text "Visit Google", they will be tak
   </body>
 </html>
 ```
+
+##### Separate Links:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      <a href="https://coddy.tech">Visit Coddy </a>
+    </p>
+    <p>
+      <a href="https://www.google.com">Visit Google</a>
+    </p>
+  </body>
+</html>
+```
+
+### New Page Links:
+
+You can also create links that open on a **new tab or window** by using the `target` attribute with the value `_blank`:
+
+#### Basic Syntax:
+
+```html
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+```
+
+> [!NOTE]
+> This will open the link in a new tab or window, but this will depend on the user's browser settings!
+
+### Images:
+
+Images can make your webpages more engaging, and adding them into HTML is simple! Use the `<img>` tag for inserting images with ease. The `<img>` tag is self-closing, so it does not require an end tag.
+
+#### How to Insert an Image:
+
+To insert an image, use the `src` attribute to specify the image's location (can be made by either referring the URL or file path location). Here's an example:
+
+##### Insertion Via URL:
+
+```html
+<img src="https://coddy.tech/images/bit.svg" />
+```
+
+In this example, the browser will load up and display the image from the URL `https://coddy.tech/images/bit.svg`.
+
+##### Insertion Via File Path:
+
+```html
+<img src="C:\Users\leone\OneDrive\Imagens\Screenshots£>" />
+```
+
+Or if the image is in the same folder as your HTML file:
+
+```html
+<img src="myImage.jpg" alt="A description of my image">
+```
+
+### Image Attributes:
+
+Here are some additional image attributes to improve your image manipulation and exhibition:
+
+#### `alt`:
+
+The **`alt`** attribute provides alternative text if the image doesn't load, for example:
+
+```html
+<img src="img.jpg" alt="Message that pops if image has not loaded" />
+```
+
+#### `width` and `height`:
+
+These two attributes control the size and height of an image in pixels.
+
+```html
+<img src="img.jpg" width="800" height="600" />
+```
+
+And if you combine these features, you should get something like this:
+
+```html
+<img src="img.jpg" alt="A scenic view of mountains" width="600" height="400" />
+```
+
+This would set the image source, provide a brief description, and sizes of 600x400 pixels. Always include an `alt` for accessibility and dimensions to maintain design consistency.

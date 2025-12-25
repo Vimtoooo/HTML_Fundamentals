@@ -616,3 +616,41 @@ We can use the `<span>` tag to apply styles or make changes to only a specific p
 The `style` attribute within the `<span>` tag is applying a blue paint in the "blue" word, and the rest of the sentence remains the same color!
 This is just an introduction to style attributes, we will learn them next lesson!
 
+### Semantic Tags:
+
+The **semantic tags** in HTML help define the meaning of content, making the code clearer for both developers and browsers. Unlike `<div>` and `<span>`, they give context to the enclosed content.
+
+#### Common Semantic Tags:
+
+* `<header>`: Introductory content, usually at the top;
+* `<nav>`: Contains navigation links;
+* `<main>`: Main content of the page;
+* `<article>`: A self-contained piece like a blog post;
+* `<section>`: Groups related content, often with a heading;
+* `<footer>`: Bottom section with info like copyright or contact details.
+
+#### Example of Usage:
+
+```html
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>
+        <h2>Article Title</h2>
+        <p>Article content goes here.</p>
+    </article>
+</main>
+<footer>
+    <p>Copyright 2023</p>
+</footer>
+```
+
+This structure provides a clear and meaningful layout for the content.
+

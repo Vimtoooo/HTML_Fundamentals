@@ -654,3 +654,29 @@ The **semantic tags** in HTML help define the meaning of content, making the cod
 
 This structure provides a clear and meaningful layout for the content.
 
+### Sections and Articles:
+
+The `<section>` and `<article>` tags are used to **organize content into logical parts**.
+
+#### `<section>`: 
+
+The `<section>` tag defines a section in a document, such as chapters, headers, footers and any other sections of the document. This can be seen as a way to group content together, for example, you might use `<section>` to divide a page into an introduction, content and contact information. Here is how to use `<section>`:
+
+```html
+<section>
+    <h2>Section Heading</h2>
+    <p>Section content goes here.</p>
+</section>
+```
+
+#### `<article>`:
+
+In the other hand, the `<article>` tag specifies independent, self-contained content. I should make sense on its own and also possible to read it independently from the rest of the website. Examples of where an `<article>` element should be used: In a forum post, a blog entry, a news story or a comment. Here you can see the `<article>` tag being utilized:
+
+```html
+<article>
+    <h2>Article Title</h2>
+    <p>Article content goes here.</p>
+</article>
+```
+

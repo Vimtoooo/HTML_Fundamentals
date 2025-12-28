@@ -680,3 +680,43 @@ In the other hand, the `<article>` tag specifies independent, self-contained con
 </article>
 ```
 
+### Recap - Layout:
+
+* **Divisions**: Use `<div>` tags to create containers that group other elements together, as they are block-level elements, taking up the full width available;
+* **Inline Spans**: Use `<span>` tags to create inline containers for text or inline elements, they only take up as much width as necessary;
+* **Semantic Tags**: Utilize tags like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>` and `<footer>` to structure your content meaningfully.
+
+Here is an example of a webpage which utilizes all of the tags that we have learned:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <p>This is the <span>main</span> content area</p>
+      </div>
+      <section>
+        <h2>About Us</h2>
+      </section>
+      <article>
+        <h3>Our Mission</h3>
+        <p>Some Text...</p>
+      </article>
+    </main>
+    <footer>
+      <p>Copyright 2024 My Website</p>
+    </footer>
+  </body>
+</html>
+```

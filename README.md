@@ -741,3 +741,25 @@ Here is a basic syntax and structure of a form with the `<form>` tag:
 </form>
 ```
 
+### Text Inputs:
+
+The **text inputs** are used to **create form fields** where users can **insert text by typing**. There are various types of text inputs, each designed for different kinds of text-based data. The most common type is the **single-line text input**, created using the `<input>` tag with the `type` attribute set to "text".
+
+#### Syntax for `<input>` Tag:
+
+Here is the following syntax for creating a text input in HTML:
+
+```html
+<form>
+  <input type="text" name="fieldname">
+</form>
+```
+
+* `<input`: The tag that defines the input field;
+* `type="text"`: An attribute that specified the input type as text;
+* `name`: An attribute that gives the input field a name, which is used to identify the data when the form is submitted.
+
+> [!NOTE]
+> The `<input>` is a special tag (self-closing tag), not requiring the closing tag at the end!
+> And it is also **good practice** to maintain the `<input>` tag inside the `<form>` tag, ensuring that any user input is submitted, allowing the browser to handle validation and accessibility features correctly.
+

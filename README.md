@@ -522,7 +522,7 @@ In this example, the browser will load up and display the image from the URL `ht
 ##### Insertion Via File Path:
 
 ```html
-<img src="C:\Users\leone\OneDrive\Imagens\Screenshots£>" />
+<img src="file:///C:\Users\leone\OneDrive\Imagens\Screenshots£>" />
 ```
 
 Or if the image is in the same folder as your HTML file:
@@ -720,3 +720,24 @@ Here is an example of a webpage which utilizes all of the tags that we have lear
   </body>
 </html>
 ```
+
+## Forms and Inputs Part 1:
+
+### Form Basics:
+
+In HTML, **forms** are used to **collect user input**, where a **form** is a sections of a document that contains controls such as text fields, buttons, checkboxes and much more. Users can interact with these controls to provide data, which can then be sent to a server for processing. 
+
+#### Essentials of Forms:
+
+Forms are essential for **creating interactive webpages** that follow users to **submit information**, such as login credentials, search queries or feedback.
+
+#### Basic Syntax:
+
+Here is a basic syntax and structure of a form with the `<form>` tag:
+
+```html
+<form>
+    <!-- Form elements go here -->
+</form>
+```
+

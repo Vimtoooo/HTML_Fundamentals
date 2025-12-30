@@ -763,3 +763,45 @@ Here is the following syntax for creating a text input in HTML:
 > The `<input>` is a special tag (self-closing tag), not requiring the closing tag at the end!
 > And it is also **good practice** to maintain the `<input>` tag inside the `<form>` tag, ensuring that any user input is submitted, allowing the browser to handle validation and accessibility features correctly.
 
+### Input Attributes:
+
+Here I have listed some useful attributes for text inputs:
+
+#### List of handy Attributes:
+
+* `placeholder`: Provides a short hint that describes the expected value of the input field (e.g. "Enter your name");
+* `value`: Sets the initial value of the input field;
+* `maxlength`: Specifies the maximum number of characters allowed within the input field.
+
+#### Example of Usages:
+
+For the first example, we demonstrate how we use the `placeholder` attribute in an `<input>` tag:
+
+##### Using placeholder:
+
+```html
+<form>
+  <input type="text" name="username" placeholder="Enter Username">
+</form>
+```
+
+##### Using value:
+
+By default, the text box would already be holding the number "0" as a number type, not a text type!
+
+```html
+<form>
+  <input type="number" name="numberField" value="0">
+</form>
+```
+
+##### Using maxlength:
+
+The HTML code below will allow the insertion of 8 characters at maximum.
+
+```html
+<form>
+  <input type="text" name="textfield" maxlength="8">
+</form>
+```
+

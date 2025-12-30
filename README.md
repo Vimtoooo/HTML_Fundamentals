@@ -777,7 +777,7 @@ Here I have listed some useful attributes for text inputs:
 
 For the first example, we demonstrate how we use the `placeholder` attribute in an `<input>` tag:
 
-##### Using placeholder:
+##### Using 'placeholder':
 
 ```html
 <form>
@@ -785,7 +785,7 @@ For the first example, we demonstrate how we use the `placeholder` attribute in 
 </form>
 ```
 
-##### Using value:
+##### Using 'value':
 
 By default, the text box would already be holding the number "0" as a number type, not a text type!
 
@@ -795,7 +795,7 @@ By default, the text box would already be holding the number "0" as a number typ
 </form>
 ```
 
-##### Using maxlength:
+##### Using 'maxlength':
 
 The HTML code below will allow the insertion of 8 characters at maximum.
 
@@ -803,5 +803,17 @@ The HTML code below will allow the insertion of 8 characters at maximum.
 <form>
   <input type="text" name="textfield" maxlength="8">
 </form>
+```
+
+### Password Field:
+
+In HTML, a **password field** is a type of input field used to **collect passwords from users**. It is similar to a text input field, but the characters that are typed inside the password field are **masked**, which means that they are displayed as **asterisks** or even dots. This feature is to prevent others from seeing the password as it is being typed.
+
+To create a password field, use the `<input>` tag along with the `type` attribute set to **password**:
+
+#### Basic Syntax:
+
+```html
+<input type="password" name="passwordfield">
 ```
 

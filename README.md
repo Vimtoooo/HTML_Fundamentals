@@ -854,3 +854,37 @@ Here, the `<label>` tag is being utilized along with the `<input>` element to fo
 </html>
 ```
 
+### Recap - Basic Form:
+
+Let's reflect on what we have learned so far on this topic:
+
+* **Forms**: Use the `<form>` tag to create forms in their belonging place;
+* **Text Inputs**: Wield the `<input type="text">` to create single-line text input fields. Also manipulating with simple attributes like `placeholder`, `value`, `name` and `maxlength` to refine your specifications and label structures, with good customization for input fields;
+* **Password Fields**: Use `<input type="password">` to instantiate a password field, making typed characters masked with asterisks;
+* **Labels**: Use the `<label>` tag to add descriptions next to the corresponding form field, making sure to always indicate the `for` attribute to associate the label with the actual form by matching its `id` to the `for`.
+
+#### Example of Usage:
+
+Down below, we have three functioning input fields for three distinct types: Full name, email and password.
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" name="fullname" placeholder="Enter your full name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" name="email" placeholder="Enter your email">
+      <br>
+      <label for="userpassword">Password:</label>
+      <input type="password" name="userpassword" maxlength="20" placeholder="Enter your password">
+    </form>
+  </body>
+</html>
+```
+
+##### Result:
+
+![Three input labels](images/three_input_fields.jpg)

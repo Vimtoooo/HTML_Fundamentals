@@ -817,3 +817,40 @@ To create a password field, use the `<input>` tag along with the `type` attribut
 <input type="password" name="passwordfield">
 ```
 
+### Labels for Inputs:
+
+It's not always very clear what an input is about without a label.
+A label gives users a clear visual cue on what type of input it is expected for that field. Labels are created using the `<label>` tag.
+
+#### Basic Syntax:
+
+```html
+<form> <!-- Notice how the "for" and "id" attributes pursue the same value of text! -->
+  <label for="field">Label text</label>
+  <input type="text" id="field">
+</form>
+```
+
+##### Break Down:
+
+- `<label>`: The tag that initializes the label itself;
+- `for`: A link between the label and a form field, where the value of `for` should match the **id** of the form field;
+- **"Label text"**: The text that describes what the form field is for;
+- `<input>`: The unique identifier for the form field, which matches the `for` attribute in the label.
+
+#### Example of Usage:
+
+Here, the `<label>` tag is being utilized along with the `<input>` element to form a simple input text box with a label indicating what should be inserted inside.
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname"/>
+    </form>
+  </body>
+</html>
+```
+

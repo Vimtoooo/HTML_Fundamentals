@@ -831,7 +831,7 @@ A label gives users a clear visual cue on what type of input it is expected for 
 </form>
 ```
 
-##### Break Down:
+##### Breakdown:
 
 - `<label>`: The tag that initializes the label itself;
 - `for`: A link between the label and a form field, where the value of `for` should match the **id** of the form field;
@@ -888,3 +888,50 @@ Down below, we have three functioning input fields for three distinct types: Ful
 ##### Result:
 
 ![Three input labels](images/three_input_fields.jpg)
+
+## Forms and Inputs Part 2:
+
+### Radio Buttons:
+
+In HTML, **radio buttons** are used to create a **set of mutually exclusive options**, where the user can select only one option from the group. Radio buttons are created using the `<input>` tag along with the `type` attribute set to **"radio"**.
+
+#### Basic Syntax:
+
+```html
+<input type="radio" id="option1" name="radiogroup" value="option1">
+<label for="option1">Option 1</label>
+```
+
+##### Breakdown:
+
+- `<input>`: Tag that defines the input field;
+- `type="radio"`: An attribute that specifies the input type as a radio button;
+- `id`: An attribute that gives the radio button a unique identifier;
+- `name`: An attribute which groups all radio buttons together, having all radio buttons with the same value assigned to the `name` attribute, and only one option of a group can be selected at a time;
+- `value`: An attribute that specifies the value associated with the radio button. Noting that this value is sent to the server when the form is submitted!
+- `<label>`: A tag that provides a clickable label for the radio button, where the `for` attribute of the `<label>` must be the exact same value as the `id` attribute from the `<input>` tag.
+
+#### Example of Usage:
+
+```html
+<form>
+  <input type="radio" id="option1" name="myGroup" value="option1">
+  <label for="option1">Option 1</label>
+  <br>
+    
+  <input type="radio" id="option2" name="myGroup" value="option2">
+  <label for="option2">Option 2</label>
+  <br>
+    
+  <input type="radio" id="option3" name="myGroup" value="option3">
+  <label for="option3">Option 3</label>
+  <br>
+</form>
+```
+
+##### Result:
+
+![The radio buttons](images/The_radio_buttons.jpg)
+
+> [!NOTE]
+> Have you realized that all radio buttons share the same type and name, well the `type` attribute defines what type of input it will be and the `name` attribute groups all inputs together!

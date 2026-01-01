@@ -791,7 +791,7 @@ By default, the text box would already be holding the number "0" as a number typ
 
 ```html
 <form>
-  <input type="number" name="numberField" value="0">
+  <input type="number" name="numberfield" value="0">
 </form>
 ```
 
@@ -898,7 +898,7 @@ In HTML, **radio buttons** are used to create a **set of mutually exclusive opti
 #### Basic Syntax:
 
 ```html
-<input type="radio" id="option1" name="radiogroup" value="option1">
+<input type="radio" id="option1" name="radioGroup" value="option1">
 <label for="option1">Option 1</label>
 ```
 
@@ -935,3 +935,46 @@ In HTML, **radio buttons** are used to create a **set of mutually exclusive opti
 
 > [!NOTE]
 > Have you realized that all radio buttons share the same type and name, well the `type` attribute defines what type of input it will be and the `name` attribute groups all inputs together!
+
+### Checkboxes:
+
+**Checkboxes** are used to create a **set of options** where the user can select multiple options from the group. Checkboxes are created using the `<input>` tag, along with the `type` attribute set to **"checkbox"**.
+
+#### Basic Syntax:
+
+```html
+<input type="checkbox" id="option1" name="checkboxGroup" value="option1">
+<label for="option1">Option 1</label>
+```
+
+##### Simplified Breakdown:
+
+* `type="checkbox"`: Attribute that specifies the input type as a checkbox;
+* `id`: Attribute which highlights a unique identifier;
+* `value`: An attribute that specifies the value associated with the checkbox, which will be sent to the server when the form is submitted;
+* `for`: Attribute that must match to the corresponding `id` input attribute;
+* `id`: Attribute that must match to the corresponding `for` label attribute.
+
+#### Example of Usage:
+
+```html
+  <form>
+    <input type="checkbox" id="option1" name="checkboxGroup" value="option1">
+    <label for="option1">Option 1</label>
+    <br>
+
+    <input type="checkbox" id="option2" name="checkboxGroup" value="option12">
+    <label for="option2">Option 2</label>
+    <br>
+
+    <input type="checkbox" id="option3" name="checkboxGroup" value="option3">
+    <label for="option3">Option 3</label>
+    <br>
+  </form>
+```
+
+##### Result:
+
+![The checkboxes](images/Checkboxes.jpg)
+
+The exact same principles are applied for **checkboxes**, but what makes them unique is the option to select multiple boxes simultaneously.

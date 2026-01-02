@@ -729,7 +729,7 @@ In HTML, **forms** are used to **collect user input**, where a **form** is a sec
 
 #### Essentials of Forms:
 
-Forms are essential for **creating interactive webpages** that follow users to **submit information**, such as login credentials, search queries or feedback.
+Forms are essential for **creating interactive webpages** that follow users to **submit information**, such as login credentials, search queries or feedback. It is key to remember that it is **compulsory** to insert any type of user input **inside the `<form>` tag**, guaranteeing that all user input is sent the the server and submitted correctly!
 
 #### Basic Syntax:
 
@@ -978,3 +978,51 @@ In HTML, **radio buttons** are used to create a **set of mutually exclusive opti
 ![The checkboxes](images/Checkboxes.jpg)
 
 The exact same principles are applied for **checkboxes**, but what makes them unique is the option to select multiple boxes simultaneously.
+
+### Dropdowns:
+
+A **dropdown menu** is a **list of items** that appears when a user clicks on or hovers over an element. Dropdowns are commonly used to present a list of choices in a compact way.
+To create a dropdown, you use the `<select>` tag along with `<option>` tags for the individual items.
+
+#### Basic Syntax:
+
+```html
+<form>
+  <select name="dropdown">
+    <option value="value1">Option 1</option>
+    <option value="value2">Option 2</option>
+    <option value="value3">Option 3</option>
+  </select>
+</form>
+```
+
+##### Breakdown:
+
+- `<select>`: Tag that defines the dropdown menu;
+- `name`: Attribute for identifying the selected value when a form is submitted;
+- `<option>`: Tag that defines an item in the dropdown list;
+- `value`: The value which will be sent to the server when the form is submitted;
+- `option text`: Text to be displayed.
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <select name="colors">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select>
+    </form>
+  </body>
+</html>
+```
+
+In this example, we have a dropdown with the name "colors" and three options: Red, Green, and Blue.
+
+##### Result:
+
+![Dropdowns](images/dropdowns.jpg)

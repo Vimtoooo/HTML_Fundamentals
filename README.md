@@ -729,7 +729,7 @@ In HTML, **forms** are used to **collect user input**, where a **form** is a sec
 
 #### Essentials of Forms:
 
-Forms are essential for **creating interactive webpages** that follow users to **submit information**, such as login credentials, search queries or feedback. It is key to remember that it is **compulsory** to insert any type of user input **inside the `<form>` tag**, guaranteeing that all user input is sent the the server and submitted correctly!
+Forms are essential for **creating interactive webpages** that follow users to **submit information**, such as login credentials, search queries or feedback. It is key to remember that it is **compulsory** to insert any type of user input **inside the `<form>` tag**, guaranteeing that all user input is sent to the server and submitted correctly!
 
 #### Basic Syntax:
 
@@ -1026,3 +1026,19 @@ In this example, we have a dropdown with the name "colors" and three options: Re
 ##### Result:
 
 ![Dropdowns](images/dropdowns.jpg)
+
+### Buttons:
+
+Buttons are interactive elements in HTML used for **triggering actions when clicked**. To create a button, use the `<button>` tag.
+
+#### Basic Syntax:
+
+```html
+<form>
+  <button>Click Me</button>
+</form>
+```
+
+##### Result:
+
+![A button](images/button.jpg)

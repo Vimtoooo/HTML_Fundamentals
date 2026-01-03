@@ -1042,3 +1042,71 @@ Buttons are interactive elements in HTML used for **triggering actions when clic
 ##### Result:
 
 ![A button](images/button.jpg)
+
+### Buttons in Forms:
+
+Buttons play a key role in forms, where they **help submit data or reset fields**. Let's see how they work!
+
+#### A Submit Button:
+
+```html
+<form>
+    <input type="text" name="username" placeholder="Enter username">
+    <button type="submit">Submit</button>
+</form>
+```
+
+* `type="submit"`: This attribute sends the form data to the server.
+
+##### Result:
+
+![Submit button](images/Submit%20button.jpg)
+
+#### Reset Button:
+
+```html
+<form>
+    <input type="text" name="name" value="John Doe">
+    <button type="reset">Reset</button>
+</form>
+```
+
+* `type="reset"`: This clears all fields and reset them to their default values.
+
+##### Result:
+
+Here, the reset button will be displayed, where the user may type anything other than John Doe, for example, "Josh".
+
+![Reset button before](images/Reset%20button%20before%20reset.jpg)
+
+Now, if the user presses the `reset` button, the input box will go back to holding the default value of "John Doe".
+
+![reset button after](images/Reset%20button%20after%20reset.jpg)
+
+#### Example of Usage:
+
+For the user interface, we have included: 
+
+* An input field;
+* Three buttons:
+  - Send button (for submitting data);
+  - Clear button (reset);
+  - Click Me (a generic button, with no functionality).
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <input type="text" name="message" placeholder="Enter your message">
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
+      <button>Click Me</button>
+    </form>
+  </body>
+</html>
+```
+
+##### Result:
+
+![Use of buttons](images/buttons%20in%20action.jpg)

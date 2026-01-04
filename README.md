@@ -1110,3 +1110,68 @@ For the user interface, we have included:
 ##### Result:
 
 ![Use of buttons](images/buttons%20in%20action.jpg)
+
+### Recap - Forms 1:
+
+Here is a recap of more advanced forms that we have gone through:
+
+* **Radio Button**: Use `<input type="radio">` to initialize a set of mutually exclusive options;
+* **Checkboxes**: The `<input type="checkbox">` creates options which can be selected independently;
+* **Dropdowns**: With the `<select>` tag, you'll be able to make a dropdown list, and `<option>` tags for the individual items;
+* **Buttons**: Use the `<button>` tag to instantiate a button, manipulating with the `type` attribute to specify the **button type** (submit or reset).
+
+#### Example of a Webpage:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <p>Select a drink: </p>
+      <!-- Write code here -->
+      <input type="radio" name="drink" id="water" value="water">
+      <label for="water">Water</label>
+      <br>
+
+      <input type="radio" name="drink" id="coke" value="coke">
+      <label for="coke">Coke</label>
+      <br>
+
+      <input type="radio" name="drink" id="sprite" value="sprite">
+      <label for="sprite">Sprite</label>
+      <br>
+            
+      <p>Select extras: </p>
+      <!-- Write code here -->
+      <input type="checkbox" name="extras" id="ice" value="ice">
+      <label for="ice">Ice</label>
+      <br>
+
+      <input type="checkbox" name="extras" id="lemon" value="lemon">
+      <label for="lemon">Lemon</label>
+      <br>
+
+      <input type="checkbox" name="extras" id="sugar" value="sugar">
+      <label for="sugar">Sugar</label>
+      <br>
+            
+      <p>Select size: </p>
+      <!-- Write code here -->
+      <select name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <br>
+      <br>
+
+      <button type="submit">Place Order</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
+```
+
+##### Result:
+
+![Recap of forms 1](images/Recap%20of%20forms%201.jpg)

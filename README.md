@@ -1175,3 +1175,70 @@ Here is a recap of more advanced forms that we have gone through:
 ##### Result:
 
 ![Recap of forms 1](images/Recap%20of%20forms%201.jpg)
+
+### Recap - Forms 2:
+
+For the second part of the recap, we will construct a simple registration form just like the one in the picture.
+
+![Registration form](images/Registration%20form.png)
+
+#### Breakdown:
+
+To achieve this goal, we will have to utilize a variety of inputs:
+
+- Input for text, email and password;
+- Labels;
+- Radio buttons;
+- Checkboxes;
+- Regular buttons (for sign up/submit and clear).
+
+##### HTML Breakdown:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username" placeholder="Enter your username">
+      <br>
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="Enter your email">
+      <br>
+
+      <label for="password">Password: </label>
+      <input type="password" name="userpassword" id="password" placeholder="Enter your password">
+      <br>
+
+      <p>User Type:</p>
+
+      <input type="radio" name="usertype" id="student" value="student">
+      <label for="student">Student</label>
+      <br>
+
+      <input type="radio" name="usertype" id="teacher" value="teacher">
+      <label for="teacher">Teacher</label>
+      <br>
+
+      <p>Interests:</p>
+
+      <input type="checkbox" name="interests" id="sports" value="sports">
+      <label for="sports">Sports</label>
+      <br>
+
+      <input type="checkbox" name="interests" id="music" value="music">
+      <label for="music">Music</label>
+      <br>
+
+      <input type="checkbox" name="interests" id="technology" value="technology">
+      <label for="technology">Technology</label>
+      <br>
+      <br>
+
+      <button type="submit">Sign Up</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
+```

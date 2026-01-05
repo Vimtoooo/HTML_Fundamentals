@@ -2,45 +2,44 @@
 <html>
   <body>
     <form>
-      <p>Select a drink: </p>
-      <!-- Write code here -->
-      <input type="radio" name="drink" id="water" value="water">
-      <label for="water">Water</label>
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username" placeholder="Enter your username">
       <br>
 
-      <input type="radio" name="drink" id="coke" value="coke">
-      <label for="coke">Coke</label>
+      <label for="emal">Email: </label>
+      <input type="email" name="email" id="email" placeholder="Enter your email">
       <br>
 
-      <input type="radio" name="drink" id="sprite" value="sprite">
-      <label for="sprite">Sprite</label>
-      <br>
-            
-      <p>Select extras: </p>
-      <!-- Write code here -->
-      <input type="checkbox" name="extras" id="ice" value="ice">
-      <label for="ice">Ice</label>
+      <label for="password">Password: </label>
+      <input type="password" name="userpassword" id="password" placeholder="Enter your password">
       <br>
 
-      <input type="checkbox" name="extras" id="lemon" value="lemon">
-      <label for="lemon">Lemon</label>
+      <p>User Type:</p>
+
+      <input type="radio" name="usertype" id="student" value="student">
+      <label for="student">Student</label>
       <br>
 
-      <input type="checkbox" name="extras" id="sugar" value="sugar">
-      <label for="sugar">Sugar</label>
+      <input type="radio" name="usertype" id="teacher" value="teacher">
+      <label for="teacher">Teacher</label>
       <br>
-            
-      <p>Select size: </p>
-      <!-- Write code here -->
-      <select name="size">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-      </select>
+
+      <p>Interests:</p>
+
+      <input type="checkbox" name="interests" id="sports" value="sports">
+      <label for="sports">Sports</label>
+      <br>
+
+      <input type="checkbox" name="interests" id="music" value="music">
+      <label for="music">Music</label>
+      <br>
+
+      <input type="checkbox" name="interests" id="technology" value="technology">
+      <label for="technology">Technology</label>
       <br>
       <br>
 
-      <button type="submit">Place Order</button>
+      <button type="submit">Sign Up</button>
       <button type="reset">Clear</button>
     </form>
   </body>

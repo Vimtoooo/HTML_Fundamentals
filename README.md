@@ -1242,3 +1242,86 @@ To achieve this goal, we will have to utilize a variety of inputs:
   </body>
 </html>
 ```
+
+## Tables:
+
+### Tables Basics:
+
+In HTML, **tables** help **structure and organize** data into **rows and columns**, making them great tools for displaying data in a structured format. Such as schedules, statistics or any other type of information that can be presented in a grid. 
+To create a table, you use the `<table>` tag along with other tags like `<tr>` for table rows, `<td>` for table data (cells) and `<th>` for table headers.
+
+#### Basic Syntax:
+
+Here is the basic structures of an HTML table:
+
+```html
+<table>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+    </tr>
+    <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+    </tr>
+</table>
+```
+
+- `<table>`: The tag that defines the table.
+- `<tr>`: Stands for "table row", this would define the table row.
+- `<th>`: Stands for "table header", this tag defines a header cell. Where header cells would be typically used for **column** or **row titles**, and are displayed in bold by default.
+- `<td>`: Stands for "table data", specifically defines a data or value into a cell into a particular column and row.
+
+Despite the fact that the `<table>` tags can be used to construct tables, the user can decide whether to create a **vertical** or **horizontal** table. Here are more examples:
+
+#### Vertical Table (Traditional):
+
+Here is a table in a default format:
+
+```html
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>25</td>
+  </tr>
+</table>
+```
+
+##### Result:
+
+![Vertical Table](images/Vertical%20Table.jpg)
+
+#### Horizontal Table:
+
+This time, we have a horizontal table in the following format:
+
+```html
+<table>
+  <tr>
+    <th>Name</th>
+    <td>John</td>
+    <td>Jane</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>30</td>
+    <td>25</td>
+  </tr>
+</table>
+```
+
+##### Result:
+
+![Horizontal Table](images/horizontal%20table.jpg)

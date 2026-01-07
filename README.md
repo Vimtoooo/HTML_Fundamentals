@@ -1325,3 +1325,49 @@ This time, we have a horizontal table in the following format:
 ##### Result:
 
 ![Horizontal Table](images/horizontal%20table.jpg)
+
+### Adding Captions:
+
+In HTML tables, a **caption** is a **title or an explanation for a table**, it provides a brief description of the table's content, making it easier for users to understand the purpose of the table. 
+Captions are created using the `<caption>` tag inside a `<table>` tag.
+
+#### Basic Syntax:
+
+```html
+<table>
+    <caption>Table Caption</caption>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+    </tr>
+</table>
+```
+
+#### Example of Usage:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <table>
+      <caption>List of Guests</caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jack</td>
+        <td>21</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+##### Result:
+
+![Caption within a table](images/caption.jpg)

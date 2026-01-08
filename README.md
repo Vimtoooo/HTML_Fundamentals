@@ -1463,3 +1463,53 @@ Here, we have a complex but simple table layout for Student Information:
 ##### Result:
 
 ![Student information](images/Student%20Information.jpg)
+
+### Recap - Tables:
+
+Let's do a recap!
+
+- `<table>`: The tag that defines the table.
+- `<tr>`: Stands for "table row", this would define the table row.
+- `<th>`: Stands for "table header", this tag defines a header cell. Where header cells would be typically used for **column** or **row titles**, and are displayed in bold by default.
+- `<td>`: Stands for "table data", specifically defines a data or value into a cell into a particular column and row.
+- `<caption>` Used for adding captions above a table.
+- `border`: Attribute that makes the span of a table visible or not (if set to 1).
+- `colspan` and `rowspan`: Attributes for spanning columns and rows for complex structures and layout.
+
+#### Example of a Webpage:
+
+Here is an example of a webpage which utilizes all of the mentioned tags and attributes.
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <table border="1">
+      <caption>Employee Information</caption>
+      <tr>
+        <th colspan="2">Employee Details</th>
+        <th>Department</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2">John Doe</td>
+        <td>Sales</td>
+        <td>$50,000</td>
+      </tr>
+      <tr>
+        <td>Marketing</td>
+        <td>$60,000</td>
+      </tr>
+      <tr>
+        <td colspan="2">Jane Smith</td>
+        <td>IT</td>
+        <td>$70,000</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+##### Result:
+
+![Final Table](images/Final%20Table.jpg)

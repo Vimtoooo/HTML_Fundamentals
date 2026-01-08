@@ -1371,3 +1371,95 @@ Captions are created using the `<caption>` tag inside a `<table>` tag.
 ##### Result:
 
 ![Caption within a table](images/caption.jpg)
+
+### Spanning Rows and Columns:
+
+In HTML, you can make table cells span multiple rows or columns using the `rowspan` and `colspan` attributes. These attributes allow you to create more **complex table layouts** by **merging cells together**. To make the spans visible, it is encouraged to use the `border` attribute inside the `<table>` tag, and defining it to one, for example (`<table border="1">`).
+
+#### `colspan` Attribute:
+
+The `colspan` attribute is used to specify the **number of columns** a cell should span. It is added to the `<td>` or `<th>` tag of the cell that you want to expand.
+
+##### How to use `colspan`:
+
+```html
+<table border="1">
+    <tr>
+        <th colspan="2">Name</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+    </tr>
+</table>
+```
+
+##### Result:
+
+![Colspan attribute](images/colspan.jpg)
+
+In this example, the header cell with the text "Name" spans two columns. This can be useful for creating a header that covers multiple columns!
+
+#### `rowspan` Attribute:
+
+The `rowspan` attribute is used to specify the **number of rows** a cell should span. Where it is also added to the `<td>` or `<th>` tag of the cell that you would want to expand.
+
+##### How to use `rowspan`:
+
+```html
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <td rowspan="2">John</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jane</td>
+        <td>25</td>
+    </tr>
+</table>
+```
+
+##### Result:
+
+![rowspan attribute](images/rowspan.jpg)
+
+In this example, the cell with the text "John" spans two rows, this can be useful for **groping data** in a table.
+
+#### Can I use both attributes?
+
+You can also use both the `colspan` and `rowspan` in the same table to create complex layouts. Just remember to adjust the **number of cells in each row accordingly** to accommodate the spanned cells. 
+
+#### Example of Usage:
+
+Here, we have a complex but simple table layout for Student Information:
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <table border="1">
+      <tr>
+        <th colspan="2">Student Information</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td rowspan="2">John Doe</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
+
+##### Result:
+
+![Student information](images/Student%20Information.jpg)
